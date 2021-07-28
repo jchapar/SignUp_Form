@@ -1,3 +1,48 @@
-body {
-  background-color: red;
+@import "root";
+
+main {
+  height: 100vh;
+  width: 100%;
+  background: url("../images/bg-intro-mobile.png") no-repeat center center fixed;
+  background-size: cover;
+  position: relative;
+  font-family: $font-family;
+}
+
+.container {
+  height: 100%;
+  width: 100%;
+  background-color: $primary-red;
+  opacity: 0.6;
+  display: grid;
+  grid-template-areas:
+    "contentOne contentOne"
+    "contentTwo contentTwo";
+}
+
+.content-one {
+  grid-area: contentOne;
+  padding: 4rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+
+  .content-title {
+    font-size: 2.5rem;
+  }
+}
+
+.content-two {
+  grid-area: contentTwo;
+}
+
+// Attribution
+.attribution {
+  font-size: 11px;
+  text-align: center;
+}
+.attribution a {
+  color: hsl(228, 45%, 44%);
 }
