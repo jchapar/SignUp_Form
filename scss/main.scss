@@ -3,7 +3,8 @@
 main {
   height: 100vh;
   width: 100%;
-  background: url("../images/bg-intro-mobile.png") no-repeat center center fixed;
+  // background: $primary-red,
+  // url("../images/bg-intro-mobile.png") no-repeat center center fixed;
   background-size: cover;
   position: relative;
   font-family: $font-family;
@@ -13,7 +14,7 @@ main {
   height: 100%;
   width: 100%;
   background-color: $primary-red;
-  opacity: 0.6;
+  // opacity: 0.6;
   display: grid;
   grid-template-areas:
     "contentOne contentOne"
@@ -22,20 +23,102 @@ main {
 
 .content-one {
   grid-area: contentOne;
-  padding: 4rem;
+  padding-top: 4rem;
+  padding-left: 4rem;
+  padding-right: 4rem;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
   text-align: center;
+  margin-bottom: 4rem;
 
   .content-title {
     font-size: 2.5rem;
+    color: #fff;
+    font-weight: 500;
+    margin-bottom: 2rem;
+    line-height: 1;
+  }
+
+  .content-text {
+    line-height: 1.9;
+    color: #fff;
   }
 }
 
 .content-two {
   grid-area: contentTwo;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 0 4rem;
+
+  .trial-banner {
+    background: $accent-blue;
+    width: 100%;
+    padding: 1rem 4rem;
+    text-align: center;
+    border-radius: 1rem;
+    margin-bottom: 2rem;
+    box-shadow: 0 3px 2px 1px rgba(0, 0, 0, 0.2);
+    h4 {
+      color: #fff;
+      font-weight: 400;
+      font-size: 1.3rem;
+      span {
+        font-weight: 500;
+      }
+    }
+  }
+
+  .form-container {
+    background: #fff;
+    padding: 2rem;
+    border-radius: 10px;
+    box-shadow: 0 8px 2px 1px rgba(0, 0, 0, 0.2);
+
+    .form-input {
+      width: 100%;
+      display: block;
+      margin: 1rem 0;
+
+      input {
+        width: 100%;
+        height: 100%;
+        padding: 1rem;
+        border: 1px solid #ccc;
+        border-radius: 5px;
+        font-size: 1rem;
+        font-family: $font-family;
+      }
+    }
+
+    button {
+      background: $primary-green;
+      display: block;
+      margin: 1rem 0;
+      border: none;
+      width: 100%;
+      height: 100%;
+      padding: 1.5rem;
+      border-radius: 10px;
+      color: #fff;
+      letter-spacing: 0.1rem;
+      text-transform: uppercase;
+      box-shadow: 2px 3px 2px 1px green;
+    }
+
+    .terms-text {
+      text-align: center;
+      font-size: 0.9rem;
+      color: $neutral-gray-blue;
+
+      span {
+        color: $primary-red;
+      }
+    }
+  }
 }
 
 // Attribution
