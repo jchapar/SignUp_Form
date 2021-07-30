@@ -1,0 +1,45 @@
+@media (min-width: 686px) {
+  main {
+    display: flex;
+    background: url("../images/bg-intro-desktop.png") no-repeat center center
+        fixed,
+      $primary-red;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .container {
+    grid-template-areas:
+      "contentOne contentTwo"
+      "contentOne contentTwo";
+    padding: 5rem;
+  }
+
+  .content-one {
+    text-align: left;
+
+    .content-title {
+      font-size: 4rem;
+    }
+
+    .content-text {
+      line-height: 1.5;
+      font-size: 1rem;
+    }
+  }
+
+  .content-two {
+    justify-content: center;
+
+    .trial-banner {
+      h4 {
+        font-size: 1rem;
+      }
+    }
+
+    .terms-text {
+      font-size: 0.1rem;
+    }
+  }
+}
