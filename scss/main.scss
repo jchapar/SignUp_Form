@@ -81,6 +81,10 @@ main {
       display: block;
       margin: 1rem 0;
 
+      &.success input {
+        border-color: none;
+      }
+
       &.error input {
         border-color: red;
       }
