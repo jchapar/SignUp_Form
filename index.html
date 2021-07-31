@@ -26,18 +26,22 @@
           <h4><span>Try it free 7 days </span>then $20/mo. thereafter</h4>
         </div>
         <div class="form-container">
-          <form>
+          <form id="form">
             <div class="form-input">
-              <input type="text" placeholder="First Name">
+              <input type="text" placeholder="First Name" id="first-name">
+              <small>Error Message</small>
             </div>
             <div class="form-input">
-              <input type="text" placeholder="Last Name">
+              <input type="text" placeholder="Last Name" id="last-name">
+              <small>Error Message</small>
             </div>
             <div class="form-input">
-              <input type="email" placeholder="Email Address">
+              <input type="email" placeholder="Email Address" id="email">
+              <small>Error Message</small>
             </div>
             <div class="form-input">
-              <input type="password" placeholder="Password">
+              <input type="password" placeholder="Password" id="password">
+              <small>Error Message</small>
             </div>
             <button type="submit">Claim your free trial</button>
           </form>
@@ -52,11 +56,6 @@
     </p>
   </main>
 
-  <!-- <footer>
-    <p class="attribution">
-      Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
-      Coded by <a href="#">Your Name Here</a>.
-    </p>
-  </footer> -->
+  <script src="./dist/js/app.js"></script>
 </body>
 </html>

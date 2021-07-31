@@ -81,6 +81,14 @@ main {
       display: block;
       margin: 1rem 0;
 
+      &.error input {
+        border-color: red;
+      }
+
+      &.error small {
+        visibility: visible;
+      }
+
       input {
         width: 100%;
         height: 100%;
@@ -93,6 +101,12 @@ main {
         &:focus {
           outline-color: $accent-blue;
         }
+      }
+
+      small {
+        color: red;
+        padding-left: 1rem;
+        visibility: hidden;
       }
     }
 
